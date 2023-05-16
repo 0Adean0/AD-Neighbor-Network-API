@@ -1,4 +1,4 @@
-const db = require('./config/connection')
+const db = require('./configuration/connection')
 const express = require("express")
 const routes = require("./routes")
 const PORT = 3001
