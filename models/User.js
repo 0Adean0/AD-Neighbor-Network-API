@@ -32,8 +32,8 @@ const seedUser = async() => {
        {membertag:"Papadopalis Bonyon", email: "pdb@gmail.com"},
        {membertag:"Mallo Demarco", email: "malloman@gmail.com"},
        {membertag:"Bowser T", email: "btizzy@gmail.com"},
-       {membertag:"Howdy McHowdyface", email: "Howdyx2@gmail.com"},
+       {membertag:"Howdy McHowdyface", email: "Howdyx2@gmail.com"}
     ]);
 };
 module.exports = User
-seedUser()
+seedUser();
