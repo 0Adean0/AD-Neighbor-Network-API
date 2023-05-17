@@ -16,8 +16,10 @@ const reactionSchema = new Schema({
     type:String,
     required:true
    },
+},
+   {
    toJSON:{
-    getters:true,
-   },
+    getters:true
+   }
 });
 module.exports = reactionSchema;

@@ -1,5 +1,5 @@
 const {Schema,model} =require("mongoose")
-const userSchema =newSchema({
+const userSchema = new Schema({
     membertag:{
         type:String,
         required:true,

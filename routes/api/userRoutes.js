@@ -21,6 +21,5 @@ router
 router
 .route("/:userId/neighbor/:neighborId")
 .post(generateNeighbor)
-.delete(deleteNeighbor);
 
 module.exports = router

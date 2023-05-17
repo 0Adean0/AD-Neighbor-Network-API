@@ -6,9 +6,9 @@ const app = express();
 
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-app.use(routes);
+app.use(routes)
 
-db.once("open",()=>{
+db.once("open",() =>{
     app.listen(PORT,()=>{
         console.log(`Server running at host on port ${PORT}!`)
     })

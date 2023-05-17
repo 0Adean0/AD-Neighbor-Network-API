@@ -1,10 +1,5 @@
-const {connect,connection,set} = require("mongoose")
+const mongoose =require("mongoose")
 
-set('strictQuery',false)
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/ad-neighbor-network-api');
 
-connect("mongodb://127.0.0.1:27017/neighborNetworkDb",{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-});
-
-module.exports = connect
+module.exports = mongoose.connection;
